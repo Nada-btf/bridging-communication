@@ -1,0 +1,110 @@
+:root {
+  /* Colors */
+  --blue: #1E3A8A;
+  --blue-light: #EEF2FF;
+  --blue-dark: #0F2A5E;
+  --teal: #14B8A6;
+  --teal-light: #F0FDFA;
+  --teal-dark: #0F766E;
+  --gray-50: #F9FAFB;
+  --gray-100: #F3F4F6;
+  --gray-200: #E5E7EB;
+  --gray-300: #D1D5DB;
+  --gray-500: #6B7280;
+  --gray-700: #374151;
+  --gray-900: #111827;
+  --white: #FFFFFF;
+  --red: #DC2626;
+  --green: #10B981;
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+  
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+}
+
+/* ===== DARK THEME ===== */
+body.dark-theme {
+  --blue: #6366f1;
+  --blue-light: #1e1b4b;
+  --blue-dark: #4338ca;
+  --teal: #2dd4bf;
+  --teal-light: #0f2a29;
+  --gray-50: #1a1a2e;
+  --gray-100: #16213e;
+  --gray-200: #0f3460;
+  --gray-300: #1a2744;
+  --gray-500: #94a3b8;
+  --gray-700: #cbd5e1;
+  --gray-900: #f1f5f9;
+  --white: #0f172a;
+  --red: #f87171;
+  --green: #34d399;
+
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+/* Ensure cards and containers adapt in dark mode */
+body.dark-theme .app {
+  background: #0f172a;
+}
+
+body.dark-theme .history-card,
+body.dark-theme .settings-card,
+body.dark-theme .history-controls,
+body.dark-theme .history-group,
+body.dark-theme .admin-card,
+body.dark-theme .admin-table-container,
+body.dark-theme .translate-panel,
+body.dark-theme .auth-modal {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f1f5f9;
+}
+
+body.dark-theme .navbar {
+  background: #0f172a;
+  border-color: #1e293b;
+}
+
+body.dark-theme input,
+body.dark-theme select,
+body.dark-theme textarea {
+  background: #1e293b;
+  color: #f1f5f9;
+  border-color: #334155;
+}
+
+body.dark-theme .dropdown-menu,
+body.dark-theme .notif-dropdown {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+body.dark-theme .dropdown-item:hover,
+body.dark-theme .notif-item:hover {
+  background: #0f172a;
+}

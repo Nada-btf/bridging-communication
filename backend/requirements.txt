@@ -1,0 +1,12 @@
+flask
+flask-cors
+PyJWT
+vosk
+sounddevice
+opencv-python
+mediapipe==0.10.9
+joblib
+pymongo
+scikit-learn
+mysql-connector-python
+bcrypt

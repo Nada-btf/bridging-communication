@@ -1,0 +1,48 @@
+.app {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: var(--white);
+  min-height: 100vh;
+}
+
+.main-content {
+  padding: var(--spacing-xl);
+  animation: fadeIn 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+  padding: 10px 24px;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.btn-primary:hover {
+  background: var(--blue-dark);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1.5px solid var(--gray-200);
+  padding: 10px 24px;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.btn-outline:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: var(--spacing-lg);
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "nada@test.com": {
+    "id": 1,
+    "name": "nada",
+    "email": "nada@test.com",
+    "password": "1f83fcad8e4b8e8bd6752cf4579f9ca7b49e385b5a942b6c3552a28b36b3cb76",
+    "role": "user",
+    "type": "deaf",
+    "created_at": "2026-05-05T01:25:21.646991"
+  },
+  "nadabtf@gmail.com": {
+    "id": 2,
+    "name": "nada",
+    "email": "nadabtf@gmail.com",
+    "password": "1f83fcad8e4b8e8bd6752cf4579f9ca7b49e385b5a942b6c3552a28b36b3cb76",
+    "role": "user",
+    "type": "deaf",
+    "blocked": false,
+    "created_at": "2026-05-06T15:24:07.036602"
+  },
+  "nadabtf@test.com": {
+    "id": 3,
+    "name": "nada",
+    "email": "nadabtf@test.com",
+    "password": "eceed8d1c723895a90e8c0bd35ec0d3987e3fbb54e6b0ebec06e7aeb225eb026",
+    "role": "user",
+    "type": "deaf",
+    "blocked": false,
+    "created_at": "2026-05-06T15:39:34.441709"
+  }
+}

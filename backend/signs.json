@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "gesture": "\ud83d\udc4b",
+    "meaning": "Hello",
+    "category": "Greeting"
+  },
+  {
+    "id": 2,
+    "gesture": "\ud83e\udd1f",
+    "meaning": "I love you",
+    "category": "Emotion"
+  },
+  {
+    "id": 3,
+    "gesture": "\ud83d\udc4d",
+    "meaning": "Good",
+    "category": "Positive"
+  },
+  {
+    "id": 4,
+    "gesture": "\ud83d\udc4e",
+    "meaning": "Bad",
+    "category": "Negative"
+  },
+  {
+    "id": 5,
+    "gesture": "\ud83d\ude4f",
+    "meaning": "Thank you",
+    "category": "Greeting"
+  }
+]

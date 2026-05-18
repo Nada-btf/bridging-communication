@@ -1,0 +1,146 @@
+.toast-notification {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  min-width: 300px;
+  max-width: 400px;
+  background: var(--gray-900);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: var(--shadow-xl);
+  z-index: 1100;
+  animation: slideInRight 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.toast-notification:hover {
+  transform: translateX(-4px);
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}
+
+.toast-notification.closing {
+  animation: slideOutRight 0.3s ease forwards;
+}
+
+/* Toast Types */
+.toast-success {
+  background: #065F46;
+  border-left: 4px solid #34D399;
+}
+
+.toast-error {
+  background: #991B1B;
+  border-left: 4px solid #F87171;
+}
+
+.toast-warning {
+  background: #92400E;
+  border-left: 4px solid #FBBF24;
+}
+
+.toast-info {
+  background: var(--blue);
+  border-left: 4px solid var(--teal);
+}
+
+/* Toast Icon */
+.toast-icon {
+  width: 24px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.toast-icon svg {
+  width: 14px;
+  height: 14px;
+  stroke: white;
+}
+
+/* Toast Message */
+.toast-message {
+  flex: 1;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--white);
+}
+
+/* Toast Close Button */
+.toast-close {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.toast-close:hover {
+  color: var(--white);
+}
+
+/* Progress Bar Animation */
+.toast-progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  animation: progress 3s linear forwards;
+}
+
+@keyframes progress {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .toast-notification {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    min-width: auto;
+    max-width: none;
+  }
+}
